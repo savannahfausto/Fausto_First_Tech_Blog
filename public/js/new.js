@@ -1,19 +1,22 @@
 const newFormHandler = async function(event) {
     event.preventDefault();
 
-    const title = document.querySelector('input[name="post-title"]').value;
-    const body = document.querySelector('textarea[name="post-body"]').value;
+    const name = document.querySelector('input[name="name"]').value;
+    const description = document.querySelector('textarea[name="description"]').value;
+    try{
 
-    await fetch('/api/post', {
-        method: 'POST', 
-        body: JSON.stringify({
-            title,
-            body, 
-        }), 
-        headers: { 'Content-Type': 'application/json' }, 
-    });
-    
-    document.location.replace('/dashboard');
+        await fetch('/api/post', {
+            method: 'POST', 
+            body: JSON.stringify({
+                name,
+                description, 
+            }), 
+            headers: { 'Content-Type': 'application/json' }, 
+        });
+        document.location.replace('/dashboard');
+    } catch (err){
+        alert('Failed to create blog post');
+    }
     
 };
 

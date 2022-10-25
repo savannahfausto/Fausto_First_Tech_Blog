@@ -9,3 +9,5 @@ const withAuth = require('../../utils/auth');
 //edit post by id 
 
 //delete post by id
+
+ module.exports = router
