@@ -20,12 +20,13 @@ router.post('/', withAuth, async (req, res) => {
 router.put('/:id', async (req, res) => {
     // update a category by its `id` value
     try {
-      const blogData = await Blog.update({
-        // name: req.body.name,
-        // description: req.body.description
-        ...req.body
+      const updatedBlog = await Blog.update({
+        name: req.body.name,
+        description: req.body.description,
+        // ...req.body
+        //changed from id to blogs.id
       }, { where: { id: req.params.id }});
-      res.status(200).json(blogData);
+      res.status(200).json(updatedBlog);
     } catch (err) {
       res.status(400).json(err);
     }
