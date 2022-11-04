@@ -1,8 +1,11 @@
-<div class="posts list-group">
+<div class="user-posts">
     {{#each blogs}}
-        <a class="list-item flex-row justify-space-between" href="/dashboard/edit/{{id}}">
+        <a class="user-post" href="/dashboard/edit/{{id}}">
             <span>{{name}}</span>
             <span>{{format_date date_created}}</span>
         </a>
     {{/each}}
+</div>
+<div class="new-post-btn">
+        <a href="/dashboard/new">+ New Post</a>
 </div>

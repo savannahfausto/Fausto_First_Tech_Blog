@@ -32,3 +32,146 @@ h6 {
     color: var(--dark);
     line-height: 1.25;
 }
+
+nav, header {
+    background-color: var(--dark);
+}
+li {
+    display: inline;
+}
+li a {
+    /* text-decoration: none; */
+    color: var(--primary);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+label {
+   margin-left: 30px; 
+}
+
+input, textarea {
+    display: block;
+    /* margin: 0 5px; */
+    width: 95%;
+    margin: 0 auto;
+}
+
+form a {
+    margin-left: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar{
+    margin-bottom: 0px;
+    display: flex; 
+    align-items: center;
+}
+.li-inline {
+    padding-right: 20px;
+    
+}
+
+.hero {
+    min-height: 100px;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.app-title {
+    background-color: var(--primary);
+    border-radius: 10px;
+    box-shadow: 5px 5px var(--light-dark);
+    display: inline;
+    padding: 5px;
+}
+
+.app-title a {
+    color: var(--dark);
+    padding: 5px;
+}
+.card {
+    border-style: solid;
+    border-color: var(--dark);
+    width: 90%;
+    margin: 20px auto;
+}
+
+.card-header{
+    background-color: var(--dark);  
+}
+
+.card-header h2 {
+    color: var(--primary);
+    margin-left: 5px;
+}
+
+.card-body{
+    padding: 5px;
+}
+
+.btn {
+    width: 95%;
+    margin: 5px auto 0 auto;
+    background-color: var(--light-dark);
+    display: block;
+    color: var(--primary);
+}
+.user-posts{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 10px;
+}
+.user-post {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-dark);
+    margin: 5px 0;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.user-post span {
+    color: var(--primary);
+    margin: 5px;
+}
+
+.new-post-btn {
+    background-color: var(--dark);
+    border-radius: 5px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    width: 15%;
+    margin: auto;
+}
+
+.new-post-btn a{
+    color: var(--primary);
+}
+.posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark);
+    padding: 5px;
+}
+
+.post-header h2 a, .post-header div {
+    color: var(--secondary)
+}
