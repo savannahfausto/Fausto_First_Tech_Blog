@@ -57,7 +57,7 @@ router.get('/post/:id', async (req, res) => {
     });
 
     const blogs = blogData.get({ plain: true });
-    console.log('blogs1', blogs);
+    // console.log('blogs1', blogs);
     res.render('singlepost', {
       ...blogs,
       logged_in: req.session.logged_in
