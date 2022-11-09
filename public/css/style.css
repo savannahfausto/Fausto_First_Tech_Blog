@@ -105,12 +105,18 @@ a {
 }
 
 .card-header{
-    background-color: var(--dark);  
+    background-color: var(--dark); 
+    display: flex;
+    justify-content: space-between; 
 }
 
 .card-header h2 {
     color: var(--primary);
     margin-left: 5px;
+}
+.card-header div {
+    color: var(--primary);
+    margin-right: 5px;
 }
 
 .card-body{

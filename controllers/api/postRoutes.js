@@ -12,6 +12,7 @@ router.post('/', withAuth, async (req, res) => {
   
       res.status(200).json(newBlog);
     } catch (err) {
+      console.log('err', err);
       res.status(400).json(err);
     }
   });
