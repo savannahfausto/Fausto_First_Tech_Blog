@@ -23,7 +23,7 @@ This project reinforced the functionality of the MVC architecture and how it is 
 
 Steps required to install your project: 
 
-In order to install this project please either cline this [GitHub repository](https://github.com/savannahfausto/Fausto_First_Tech_Blog) or visit the Heroku deployed [application link]()
+In order to install this project please either clone this [GitHub repository](https://github.com/savannahfausto/Fausto_First_Tech_Blog) or visit the Heroku deployed [application link](https://fausto-tech-blog.herokuapp.com/)
 
 ## Usage
 
